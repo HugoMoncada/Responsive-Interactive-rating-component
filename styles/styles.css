@@ -1,0 +1,237 @@
+:root{
+    /* Primary */
+    --Orange: hsl(25, 97%, 53%);
+    
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: #28313a;
+    --Dark-Blue: #1f2630;
+    --Very-Dark-Blue: #141519;
+
+
+}
+
+/* ======== GENERAL STYLES ======== */
+
+html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--Very-Dark-Blue);
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    padding: 5% 5%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ============== */
+
+
+/* ======== RATING STYLES ======== */
+
+.rating, .thanks{
+    background-color: var(--Dark-Blue);
+    padding: 8% 6%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.rating__circle{
+    border-radius: 50%;
+    background-color: var(--Medium-Grey);
+    width: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 42px;
+}
+
+.rating__text{
+    margin-bottom: 17px;
+}
+
+.rating__text h3{
+    color: white;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    margin-top: 14px;
+}
+
+.rating__text p{
+    color: var(--Light-Grey);
+    font-size: 14px;
+}
+
+.rating__buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.rating__button{
+    padding: 14px;
+    border-radius: 50%;
+    width: 16%;
+    border: 0;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.rating__button:active{
+    background-color: var(--Orange);
+    color: white;
+}
+
+.active{
+    background-color: var(--Orange);
+    color: white;
+}
+
+.inactive{
+    background-color: var(--Medium-Grey);
+    color: var(--Light-Grey);
+}
+
+.rating__submit{
+    padding: .9em 0;
+    background-color: var(--Orange);
+    border: 0;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.rating__submit:active{
+    background-color: white;
+    color: var(--Orange);
+}
+
+/* ============== */
+
+
+/* ======== THANKS STYLES ======== */
+
+.thanks{
+    text-align: center;
+    display: none;
+}
+
+
+.thanks__selection{
+    margin-top: 30px;
+    margin-bottom: 11px;
+}
+
+#selected__text{
+    background-color: var(--Medium-Grey);
+    border-radius: 20%/100%;
+    color: #df7f36;
+    padding: 6px 14px;
+}
+
+.thanks__text h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.thanks__text p{
+    color: var(--Light-Grey);
+    font-size: 14px;
+}
+
+/* ============== */
+
+
+/* ======== ATRIBUTION STYLES ======== */
+
+.attribution{
+    font-size: 11px; text-align: center; 
+}
+.attribution a{ 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* ============== */
+
+
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+    .container{
+        width: 100%;
+    }
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    .container{
+        width: 540px;
+    }
+
+    .rating, .thanks{
+        width: 70%;
+        padding: 4% 4%;
+    }
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+    .container{
+        width: 720px;
+    }
+
+    .rating, .thanks{
+        padding: 4% 4%;
+        width: 50%;
+    }
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+    .container{
+        width: 960px;
+    }
+
+    .rating, .thanks{
+        width: 40%;
+        padding: 3% 3%;
+    }
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+    .container{
+        width: 1140px;
+    }
+
+    .rating, .thanks{
+        padding: 3% 3%;
+        width: 28%;
+    }
+ } 
+
+
+ @media only screen and (min-width: 1400px) {
+    .container{
+        width: 1320px;
+    }
+  
+ } 
