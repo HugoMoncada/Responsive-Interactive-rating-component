@@ -92,6 +92,12 @@ html,body{
     font-size: 14px;
 }
 
+
+.rating__button:hover{    
+    background-color: var(--Orange);
+    color: white;
+}
+
 .rating__button:active{
     background-color: var(--Orange);
     color: white;
